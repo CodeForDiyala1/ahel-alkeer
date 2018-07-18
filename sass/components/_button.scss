@@ -1,0 +1,26 @@
+.btn {
+    // the normal state
+    &:link,
+    &:visited {
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: 10rem;
+        font-size: $default-font-size;
+        color: $color-gray-dark;
+        background-color: $color-white;
+        transition: all .2s;
+    }
+
+    &:hover {
+        transform: translateY(-.3rem);
+        box-shadow: 0 .5rem 1rem rgba($color-black , .2);
+    }
+
+    /* the click state */
+    &:active {
+        transform: translateY(-.1rem);
+        box-shadow: 0 .5rem 1rem rgba($color-black , .2);
+    }
+
+}

@@ -1,0 +1,25 @@
+body {
+    font-family: 'Cairo', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-gray-dark;
+}
+
+.heading-primary {
+    margin-bottom: 6rem;
+    color: $color-white;
+
+    &--main {
+        font-size: 6rem;
+        word-spacing: 5px;
+        display: block;
+        font-weight: 400;
+    }
+
+    &--sub {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        word-spacing: 2rem;
+    }
+}
