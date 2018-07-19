@@ -9,3 +9,14 @@
 .u-margin-top-small {margin-top: 8rem;}
 
 .u-margin-top-huge {margin-top: 10rem;}
+
+.u-svg-gray-light {
+    path {
+        fill: $color-gray-light-1;
+    }
+}
+.u-svg-white { 
+    path {
+        fill: $color-white;
+    }
+}

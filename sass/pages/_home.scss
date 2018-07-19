@@ -13,20 +13,22 @@
     //-webkit-clip-path: polygon(100% 0, 100% 78%, 69% 89%, 40% 86%, 0 100%, 0 0);
     //clip-path: polygon(100% 0, 100% 78%, 69% 89%, 40% 86%, 0 100%, 0 0);
 
-    #curve {
-        position: absolute;
-        bottom: -2.8rem;
-        width: 100%;
-
-        path {
-            fill: $color-white;
-        }
-    }
-
     &__text-box {
         position: absolute;
         top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+}
+
+.section-about {
+    height: 70rem;
+    background-color: $color-gray-light-1;
+    position: relative;
+    overflow: hidden;
+
+    &__text-box {
+        position: relative;
+        top: 15rem;
     }
 }
