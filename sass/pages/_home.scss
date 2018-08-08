@@ -1,17 +1,22 @@
+section {
+    position: relative;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
 .header {
     position: relative;
-    height: 100vh;
+    height: 95vh;
     background-image: linear-gradient(
         to right bottom, 
-        rgba($color-tertiary-light, 0.6),
-        rgba($color-tertiary-dark, 0.7)), 
+        rgba($color-primary-light, 0.6) 50%,
+        rgba($color-primary-dark, 0.7)), 
     url("../img/bg1.jpg");
     background-size: cover;
     background-position: top;
-    overflow: hidden;
 
-    //-webkit-clip-path: polygon(100% 0, 100% 78%, 69% 89%, 40% 86%, 0 100%, 0 0);
-    //clip-path: polygon(100% 0, 100% 78%, 69% 89%, 40% 86%, 0 100%, 0 0);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 
     &__text-box {
         position: absolute;
@@ -24,8 +29,6 @@
 .section-about {
     height: 70rem;
     background-color: $color-gray-light-1;
-    position: relative;
-    overflow: hidden;
 
     &__text-box {
         position: relative;
