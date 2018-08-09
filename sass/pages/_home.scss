@@ -27,11 +27,13 @@ section {
 }
 
 .section-about {
-    height: 70rem;
     background-color: $color-gray-light-1;
+    padding: 15rem 0;
+    margin-top: -15rem; 
+    z-index: -1;
 
     &__text-box {
         position: relative;
-        top: 15rem;
+        top: 12rem;
     }
 }

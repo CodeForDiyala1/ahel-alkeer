@@ -1,31 +1,96 @@
-.btn {
-    /* the normal state */
-    &:link,
-    &:visited {
-        text-decoration: none;
-        padding: 1.5rem 4rem;
+.btn {  
+    
+    li {
         display: inline-block;
-        border-radius: 10rem;
+        list-style: none;
+        border-radius: 3px;
+        transform: skewX(-20deg);
+        -webkit-transform: skewX(-20deg);
+        -moz-transform: skewX(-20deg);
+        -ms-transform: skewX(-20deg);
+        -o-transform: skewX(-20deg);
         transition: all .2s;
         position: relative;
-        font-size: $default-font-size;
-    }
-
-    /* the hover state */
-    &:hover {
-        transform: translateY(-.3rem);
-        box-shadow: 0 .5rem 1rem rgba($color-black , .2);
 
         &::after {
-            transform: scaleX(1.4) scaleY(1.6);
-            opacity: 0;
+            content: "";
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: all .4s;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            -ms-border-radius: 3px;
+            -o-border-radius: 3px;
+        }
+        
+        &:not(:last-child) {
+            margin-left: 4rem;
+        }
+
+        &:hover {
+            transform: translateY(-.3rem);
+            box-shadow: 0 .5rem 1rem rgba($color-black , .2);
+            transform: skewX(-20deg);
+            -webkit-transform: skewX(-20deg);
+            -moz-transform: skewX(-20deg);
+            -ms-transform: skewX(-20deg);
+            -o-transform: skewX(-20deg);
+
+            &::after {
+                transform: scaleX(1.4) scaleY(1.6);
+                opacity: 0;
+            }
         }
     }
 
-    /* the click state */
-    &:active {
-        transform: translateY(-.1rem);
-        box-shadow: 0 .5rem 1rem rgba($color-black , .2);
+    //btn_primary
+    &_primary {
+        /* the normal state */
+        &:link,
+        &:visited {
+            text-decoration: none;
+            padding: 1rem 3rem;
+            display: inline-block;
+            font-size: $default-font-size;
+            transform: skewX(20deg);
+            -webkit-transform: skewX(20deg);
+            -moz-transform: skewX(20deg);
+            -ms-transform: skewX(20deg);
+            -o-transform: skewX(20deg);
+        }
+
+        /* the click state */
+        &:active {
+            transform: translateY(-.1rem);
+            box-shadow: 0 .5rem 1rem rgba($color-black , .2);
+            transform: skewX(20deg);
+            -webkit-transform: skewX(20deg);
+            -moz-transform: skewX(20deg);
+            -ms-transform: skewX(20deg);
+            -o-transform: skewX(20deg);
+        }
+    }
+
+    //btn_secondary
+    &_secondary {
+        &:link,
+        &:visited {
+            display: inline-block;
+            text-decoration: none;
+            padding: 1rem 3rem;
+            color: $color-white;
+            font-size: $default-font-size;
+            transform: skewX(20deg);
+            -webkit-transform: skewX(20deg);
+            -moz-transform: skewX(20deg);
+            -ms-transform: skewX(20deg);
+            -o-transform: skewX(20deg);
+        }
     }
 
     &--white {
@@ -37,17 +102,12 @@
         }
     }
 
-    &::after {
-        content: "";
-        display: inline-block;
-        height: 100%;
-        width: 100%;
-        border-radius: 10rem;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        transition: all .4s;
+    &--blue {
+        background-image: linear-gradient($color-primary-light, $color-primary-dark);
+    }
+
+    &--green {
+        background-image: linear-gradient($color-green-light, $color-green-dark);
     }
 
     &--animated {
@@ -56,3 +116,11 @@
         animation-fill-mode: backwards;
     }
 }
+
+
+
+
+
+
+
+

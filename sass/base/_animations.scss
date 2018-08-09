@@ -59,19 +59,19 @@
 @keyframes moveUp {
     0% {
         opacity: 0;
-        transform: translateY(6rem);
-        -webkit-transform: translateY(6rem);
-        -moz-transform: translateY(6rem);
-        -ms-transform: translateY(6rem);
-        -o-transform: translateY(6rem);
+        transform: translateY(6rem) skewX(-20deg);
+        -webkit-transform: translateY(6rem) skewX(-20deg);
+        -moz-transform: translateY(6rem) skewX(-20deg);
+        -ms-transform: translateY(6rem) skewX(-20deg);
+        -o-transform: translateY(6rem) skewX(-20deg);
 }
 
     100% {
         opacity: 1;
-        transform: translateY(0);
-        -webkit-transform: translateY(0);
-        -moz-transform: translateY(0);
-        -ms-transform: translateY(0);
-        -o-transform: translateY(0);
+        transform: translateY(0) skewX(-20deg);
+        -webkit-transform: translateY(0) skewX(-20deg);
+        -moz-transform: translateY(0) skewX(-20deg);
+        -ms-transform: translateY(0) skewX(-20deg);
+        -o-transform: translateY(0) skewX(-20deg);
 }
 }
